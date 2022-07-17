@@ -1,0 +1,411 @@
+*{
+    margin :0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* -------------------------- Đây Là Phần Header------------------ */
+ul {
+    list-style: none;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+#container {
+    max-width: 1360px;
+    margin: auto;
+}
+header {
+    background-color: #ffc602;
+    text-align:center;
+    height: 44px;
+}
+nav {
+    background-color: black;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li a {
+    color: white;
+    font-size: 15px;
+}
+nav ul li:nth-child(2) a {
+    color: #ffd400;
+    font-size: 15px;
+}
+nav ul li:nth-child(2) i {
+    color: #ffd400;
+    font-size: 15px;
+    margin-left: 6px;
+}
+nav ul li:nth-child(3) {
+    position: relative;
+}
+nav ul li:nth-child(3) ion-icon {
+    color: rgb(8, 7, 7);
+    font-size: 15px;
+    right: 6px;
+    bottom: 6px;
+    position: absolute;
+}
+nav ul li:nth-child(3) input {
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding-left: 6px;
+    outline: none;
+}
+nav ul li:nth-child(4) button {
+    height: 30px;
+    padding: 0 12px;
+    cursor: pointer;
+    background-color: transparent;
+    color: rgb(247, 242, 242);
+    border: 1px solid;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+
+}
+nav ul li:nth-child(4) ion-icon {
+    margin-right: 6px;
+}
+nav ul li:nth-child(4) button:hover {
+    background-color: rgb(190, 182, 182);
+}
+nav ul li:nth-child(5) {
+    text-align: center;
+}
+nav ul li:nth-child(5):hover a {
+    color: yellow;
+}
+nav ul li:nth-child(6) a {
+    color: #ffd400;
+}
+nav ul li:nth-child(6):hover a {
+    color: #ffd400;
+}
+nav ul li:nth-child(7):hover a {
+    color: #ffd400;
+}
+nav ul li:nth-child(8):hover a {
+    color: #ffd400;
+}
+nav ul li:nth-child(9):hover a {
+    color: #ffd400;
+}
+.card-content {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #ffd400;
+    display: block;
+    float: left;
+    margin-right: 8px;
+}
+.card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-color: #ffd400;
+    display: block;
+    pointer-events: none;
+    animation: cardname 2s linear infinite;
+}
+@keyframes cardname {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+/*--------------------- Menu Bar ---------------- */
+.menu-bar {
+    background-color: #fed100;
+}
+.menu-bar ul {
+    display: flex;
+    justify-content: space-between;
+}
+.menu-bar ul li a {
+    color: #333;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}.menu-bar ul li a ion-icon {
+    margin-right: 6px;
+    font-size: 16px;
+}
+.menu-bar ul li {
+    padding: 20px 6px;
+    transition: 0.3s ease;
+}
+.menu-bar ul li:hover {
+    background-color: rgb(255, 255, 255);
+    display: block;
+}
+.menu-bar ul li:nth-child(9) {
+    position: relative;
+}
+.menu-bar ul li:nth-child(9)::before {
+    position: absolute;
+    content: "Giảm 5%";
+    display: block;
+    height: 15px;
+    width: 45px;
+    background-color: #f51212;
+    border-radius: 5px;
+    right: -12px;
+    top: 3px;
+    font-size: 10px;
+    padding-left: 3px;
+    color: #fff;
+}
+.menu-bar ul li:nth-child(9)::after {
+    position: absolute;
+    content: "";
+    background-color: #f51212;
+    height: 7px;
+    width: 7px;
+    display: block;
+    top: 15px;
+    right: 10px;
+    z-index: 2;
+    transform: rotate(45deg);
+}
+/*----------------footer----------------------*/
+
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+/*Thiết Lập Cho Thành Phần Nội Dung Giới Thiệu*/
+footer .container .noi-dung{
+    margin-right: 30px;
+}
+footer  .container .noi-dung.about{
+    width:40%;
+}
+footer .container .noi-dung.about h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .container .noi-dung.about h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+footer .container .noi-dung.about p{
+    color: #999;
+}
+/*Thiết Lập Cho Thành Phần Icon Mạng Xã Hội*/
+.social-icon{
+    margin-top: 20px;
+    display: flex;
+}
+.social-icon li {
+    list-style: none;
+}
+.social-icon li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.social-icon li a:hover{
+    background: #f00;
+}
+.social-icon li a .fa{
+    color: #fff;
+    font-size: 20px;
+}
+.links h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.links h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.links h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+.links{
+   position: relative;
+   width: 25%;
+}
+.links ul li{
+    list-style: none;
+}
+.links ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.links ul li a:hover{
+    color: #fff;
+}
+.contact h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.contact h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+.contact .info{
+    position: relative;
+}
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact .info li span{
+    color: #999;
+}
+.contact .info li a{
+    color: #999;
+    text-decoration: none;
+}
+.btn {
+    display: inline-block;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin-top:16px;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+}
+.btn--primary {
+    background: #222;
+    color: #fff;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+    border-radius: 2px;
+    padding: 8px 24px;
+}
+.btn--primary:hover {
+    background: #f00;
+}
+.btn--primary:active {
+    background: #f00;
+    box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .2);
+}
+.form__field {
+    width: 90%;
+    background: #fff;
+    color: #a3a3a3;
+    font: inherit;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+    border: 0;
+    outline: 0;
+    padding: 8px 4px;
+}
+@media  (max-width: 768px){
+    footer{
+        padding: 40px;
+             }
+    footer .container{
+        flex-direction: column;
+    }
+    footer .container .noi-dung{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .container, .noi-dung.about, .links, .contact{
+        width: 100%;
+    }
+}
+.box {
+    background-color: #ffd400;
+}
+#box {
+    background-color: #ffd400;
+}
+.text-box1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    padding: 26px 0;
+    height: unset;
+    color: #fff;
+}
+.textlogo {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    padding: 26px 0;
+    height: unset;
+    color:#fff;
+    
+}
+
